@@ -1,0 +1,142 @@
+:root{
+    --black: #001524;
+    --green: #95D5B2;
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 62.5%;
+    overflow: hidden;
+    
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--black);
+    font-family: "Poppins",sans-serif;
+}
+
+a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    font-size: 160%;
+    padding: 2rem 2rem;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+}
+
+a:hover{
+    background-color: var(--green);
+    color: var(--black);
+    box-shadow: 0 0 5px var(--green),
+                0 0 25px var(--green),
+                0 0 50px var(--green),
+                0 0 200px var(--green);
+}
+
+a span{
+    position: absolute;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+a span:nth-of-type(1){
+    height: 2px;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent,var(--green));
+    animation-name: one;
+}
+
+ @keyframes one{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+ }
+
+ a span:nth-of-type(2){
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(transparent,var(--green));
+    top: -100%;
+    right: 0;
+    animation-name: two;
+    animation-delay: .5s;
+ }
+
+ @keyframes two{
+    0%{
+        top:-100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+ }
+
+ a span:nth-of-type(3){
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,var(--green));
+    bottom: 0;
+    right: -100%;
+    animation-name: three;
+    animation-delay: 1s;
+ }
+
+ @keyframes three{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+ }
+
+ a span:nth-of-type(4){
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg,transparent,var(--green));
+    left: 0;
+    bottom: -100%;
+    animation-name: four;
+    animation-delay: 1.5s;
+ }
+
+ @keyframes four{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+ }
+
+ .copyright{
+    color: white;
+    letter-spacing: .1rem;
+    opacity: .6;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .5rem 1rem;
+ }

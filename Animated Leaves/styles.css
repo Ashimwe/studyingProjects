@@ -1,0 +1,98 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(#333,#000); /*I know I'm ridiculously 
+    bad with colors so I mostly use the colors as they are in the 
+    reference video but it'll heal with time(I hope so)*/
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+h1{
+    color: rgba(255, 255, 255, 0.496);
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.faller{
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.faller img{
+    width: 7%;
+    position: absolute;
+    top: -7%;
+    animation-name: fall;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.faller img:nth-of-type(1){
+    left: 80%;
+}
+
+.faller img:nth-of-type(2){
+    left: 0;
+}
+
+.faller img:nth-of-type(3){
+    left: 5%;
+}
+.faller img:nth-of-type(4){
+    left: 20%;
+}
+.faller img:nth-of-type(5){
+    left: 60%;
+}
+.faller img:nth-of-type(6){
+    left: 40%;
+}
+.faller img:nth-of-type(7){
+    left: 25%;
+}
+.faller img:nth-of-type(8){
+    left: 75%;
+}
+
+@keyframes fall{
+    0%{
+        top: -7%;
+        opacity: 0;
+        transform: translate(-20px);
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        top: 100%;
+        transform: translate(20px);
+    }
+}
+
+.two{
+    transform: rotate(180deg);
+}
+
+.two img{
+    transform:  scale(0.8);
+}
+
+.three img{
+    transform: scale(2);
+}
+
+.three{
+    transform: rotateY(180deg);
+    filter: blur(3px);
+    z-index: -1;
+}

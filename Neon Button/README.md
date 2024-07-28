@@ -1,0 +1,2 @@
+Hayii Hayii so this is a contact me button that I designed in attempt to learn CSS animations(The attempt continues to this day). I followed this video()
+And the button works perfectly well so please feel free to reach out!!!
