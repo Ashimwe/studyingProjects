@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B0500;
+    font-family: arial;
+}
+
+h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: .3;
+    animation: animate 5s linear infinite;
+    letter-spacing: .5rem;
+    outline: none;
+}
+
+@keyframes animate{
+    0%,20%,41%,60%,81%,93%
+    {
+        opacity: .3;
+        text-shadow: none;
+    }
+    21%,40%,61%,80%,100%
+    {
+        opacity: 1;
+        text-shadow: 0 0 10px rgb(153, 205, 50),
+                     0 0 20px rgb(153, 205, 50),
+                     0 0 40px rgb(153, 205, 50),
+                     0 0 80px rgb(153, 205, 50),
+                     0 0 160px rgb(153, 205, 50);
+
+    }
+}
