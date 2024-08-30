@@ -1,0 +1,114 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#333,#000);
+}
+
+a{
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: clamp(16px,3vw,25px);
+    text-decoration: none;
+    padding: clamp(10px,4%,30px);
+    border-radius: 4%;
+    position: relative;
+    overflow: hidden;
+    
+    &:hover{
+        color: black;
+        background-color: greenyellow;
+        box-shadow: 0 0 5px greenyellow,
+                    0 0 25px greenyellow,
+                    0 0 50px greenyellow,
+                    0 0 100px greenyellow;
+    }
+}
+
+a span{
+    position: absolute;
+}
+
+a span:nth-of-type(1){
+    background: linear-gradient(90deg,transparent,greenyellow);
+    height: 2px;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    animation: one 1s linear infinite;
+}
+
+@keyframes one{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+a span:nth-of-type(2){
+    background: linear-gradient(transparent,greenyellow);
+    height: 100%;
+    width: 2px;
+    right: 0;
+    top: -100%;
+    animation: two 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes two{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+a span:nth-of-type(3){
+    background: linear-gradient(270deg,transparent,greenyellow);
+    height: 2px;
+    width: 100%;
+    right: -100%;
+    bottom: 0;
+    animation: three 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes three{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+a span:nth-of-type(4){
+    background: linear-gradient(360deg,transparent,greenyellow);
+    height: 100%;
+    width: 2px;
+    bottom: -100%;
+    left: 0;
+    animation: four 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes four{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
