@@ -1,1 +1,0 @@
-document.getElementById("playground").innerHTML = "Ashimwe";
