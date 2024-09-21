@@ -32,7 +32,11 @@ output += "</ul>";
 return output;
 }
 
-document.getElementById("playground").innerHTML = arrayPrint(shoes);
-document.getElementById("playground").innerHTML = objectPrint(id);
-document.getElementById("playground").innerHTML = arrayPrint(shoes);
-document.getElementById("playground").innerHTML = shoes.toString();
+const lesAutreChaussures = ["Air Jordan 3 Fragment", "Jordan Future"];
+document.getElementById("playground").innerHTML = shoes.copyWithin(3,3);
+
+const multiArray = [[1,2], [3,4], [5,6]]
+document.getElementById("playground").innerHTML = multiArray.flat().flatMap(x => [x,x * 10] );
+const newShoes = shoes.concat('lesAutresChaussures');
+document.getElementById("playground").innerHTML = 
+
