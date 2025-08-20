@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Recall</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <form>
+        <label for="fname">First Name</label><br>
+        <input type = "text" id = "fname" name = "first Name"
+        placeholder = "Enter your first name...">
+        <p>Choose your favorite disciple</p>
+
+        <input type = "radio" name = "favoriteDisciple" id = "Paul"
+        value = "The Roman">
+        <label for = "Paul">The Roman</label><br>
+        <input type = "radio" name = "favoriteDisciple" id = "Peter"
+        value = "Cephas">
+        <label for = "Peter">Cephas</label><br>
+        <input type = "radio" name="favoriteDisciple" id ="John"
+        value="'The disciple whom Jesus loves the most😅'">
+        <label for="John">'The disciple whom Jesus loves the most'😅</label><br>
+
+        <label for = "favoriteBook">Choose your favorite book:</label>
+        <select id="favoriteBook" name="books" multiple>
+            <option value = "1 John">1 John</option>
+            <option value = "1 Corinthians">1 Corinthians</option>
+            <option value = "2 Peter">2 Peter</option>
+            <option value = "Philippians">Philippians</option>
+            <option value = "John">John</option>
+        </select>
+    </form>
+</body>
+</html>
