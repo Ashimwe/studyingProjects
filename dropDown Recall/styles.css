@@ -1,0 +1,60 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: start;
+    margin:0;
+}
+
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown > a{
+    padding: 10px 30px; 
+    display: inline-block;
+    transition: .5s background-color ease-out;
+}
+
+.dropdown > a:hover{
+    background-color: lightblue;
+    color: black;
+}
+.dropdownContent{
+    position: absolute;
+    bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.1), -2px -2px 0 rgba(0,0,0,0.1);
+    transition: bottom .5s ease-in-out;
+    z-index: -1;
+}
+
+.dropdownContent a{
+    color: black;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 5px 50px 5px 5px;
+    background-color: white;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdownContent{
+    bottom: -90px;
+}
