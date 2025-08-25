@@ -1,0 +1,12 @@
+html{
+    font-family: Oswald;
+    background-color: #E1D89F;
+}
+
+header{
+    background-color: #27474E;
+    margin-inline: auto;
+    max-width: 600px;
+    min-height: 300px;
+    padding: 2%;
+}

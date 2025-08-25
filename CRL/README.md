@@ -1,0 +1,2 @@
+I've been dodging the responsiveness monster for a while now, took quite some attempts to make it less intimidating which were kind of a failure tbh. But in all of those, I'd say Kevin Powell aided a lot in kind of having the basics and fundamentals. And now, I'm officially starting my plan of attack by taking the Conquering Responsive Layout free course. I'll catch you later, ma lads.
+And oh, after like every day there's a challenge; So, the subfolders with day numbers is my take on the corresponding day challenge.

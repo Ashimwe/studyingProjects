@@ -30,5 +30,8 @@ body{
 .check::after{
     content: close-quote;
     position: absolute;
+}
 
+.check *:first-child{
+    color: red;
 }
