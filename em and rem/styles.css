@@ -1,0 +1,31 @@
+body{
+    font-family: system-ui;
+}
+
+div{
+    background-color: hsl(8, 100%, 68%);
+    font-size: 62.5%;
+    padding: 3em;
+    width: 30em;
+    width: 300px;
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    background-color: white;
+    color: rgba(0,0,0,0.5);
+    padding: .2em .3em;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: 1em 0;
+    color: black;
+    background-color: white;
+}

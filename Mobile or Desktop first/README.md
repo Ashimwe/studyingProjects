@@ -1,0 +1,2 @@
+I basically created this folder to follow Mr Powell's argument on why we should design/develop for mobile first; but I thought to myself, this is from 5 years earlier let's see consider some earlier take ons on this matter. Only to find out, him(Kevin), 4 years later, pointing out the problems with mobile first😂😂😂🤦🏾.Well, I don't really know if he's going to take back his argument from 4 years before. But, let's see.
+PS: The html file was from CSS Zen Garden.
