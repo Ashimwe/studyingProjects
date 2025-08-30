@@ -1,0 +1,69 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+.super{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    min-height: 90vh;
+    align-items: center;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.container{
+    border: 2px solid rgba(255, 255, 255, 0.425);
+    padding: 1rem 2rem;
+    width: 50%;
+    container-name: post;
+    container-type: inline-size;
+}
+
+.container.narrow{
+    max-width: 200px;
+}
+
+.container.medium{
+    max-width: 400px;
+}
+
+.container.wide{
+    max-width: 500px;
+}
+
+.container > p{
+    opacity: .8;
+    background-color: orange;
+    padding: .5rem .7rem
+}
+
+@container post (width > 275px){
+    p{
+        background-color: hsl(150, 20%, 20%) !important;
+    }
+} 
+
+@container post (width > 400px){
+    p{
+        background-color: hsl(0, 49%, 34%) !important;
+    }
+}
+
+.call-to-action{
+    background: 
+    linear-gradient(to right, blue 50%, lightblue);
+    padding: .5em;
+}
+
+.btn{
+    border: none;
+    border-radius: 10em;
+    padding: .5rem 2rem;
+    background-color: hsl(240, 50%, 50%);
+}
+
+.call-to-action{
+    display: flex;
+}

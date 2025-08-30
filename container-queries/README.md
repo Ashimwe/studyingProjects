@@ -1,0 +1,1 @@
+About time you started using modern css, old man. Anyways, just came across a peak at container queries and I think it'll definitely be sth I'll so want to use. So, let's get it, fellas. And yes of course, Kevin is helping as always.

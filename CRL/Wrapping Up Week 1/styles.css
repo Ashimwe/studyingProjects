@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 21px;
+}
+
+body{
+    min-height: 100vh;
+}
+.container{
+    color: white;
+    background-color: #23424A;
+    font-family: Roboto;
+    padding: 10% 0 10% 10%;
+    min-height: 80vh;
+}
+
+.text{
+    padding-bottom: 5%;
+}
+
+.container > *{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2{
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: bold;
+}
+
+p{
+    opacity: .8;
+    line-height: 150%;
+}
+
+.btn{
+    font-size: 90%;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: #38CFD9;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.8% 6%;
+    width: auto;
+    border-radius: 10rem;
+    white-space: nowrap;
+}
+
+/* @media (max-width: 500px){
+    :root{
+        font-size: 50%;
+    }
+} */
