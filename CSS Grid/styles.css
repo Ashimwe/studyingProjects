@@ -1,0 +1,49 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: system-ui;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    justify-content: center;
+    gap: 2em;
+}
+.card{
+    display: flex;
+    gap: .5em;
+    padding: 1em;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 1em;
+}
+
+.links{
+    display: flex;
+    align-items: start;
+    gap: 1em;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    background-color: #29BF12;
+    padding: .5em .7em;
+    border-radius: 20em;
+}
+
+.cody{
+    background-color: #709775;
+    padding: .7em;
+}
