@@ -51,10 +51,37 @@ body{
     }
 }
 
+article{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
 .call-to-action{
-    background: 
-    linear-gradient(to right, blue 50%, lightblue);
-    padding: .5em;
+    background-color: hsl(240, 20%, 50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1.5em 1em;
+    container-type: inline-size;
+}
+
+@container (inline-size <= 500px){
+    .call-to-action > *{
+        grid-column: 1/4 !important;
+    }
+    .call-to-action > .btn{
+        grid-row-start: 3;
+        justify-self: stretch;
+    }
+}
+
+@media (max-width: 500px){
+    article{
+        grid-template-columns: 1fr;
+    }
+}
+
+.call-to-action > :not(.btn){
+    grid-column: 1/2;
 }
 
 .btn{
@@ -62,8 +89,8 @@ body{
     border-radius: 10em;
     padding: .5rem 2rem;
     background-color: hsl(240, 50%, 50%);
-}
-
-.call-to-action{
-    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
 }
